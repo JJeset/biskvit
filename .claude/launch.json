@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "biskvit",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\Hasee\\AppData\\Local\\Temp\\claude\\C--Users-Hasee--claude-spares-spare-kL3TIS\\b7116e5f-d7aa-400e-bbae-4a3623265226\\scratchpad\\serve.ps1"],
+      "port": 8577
+    }
+  ]
+}

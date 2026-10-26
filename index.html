@@ -1,0 +1,1067 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Бисквит — торты на заказ в Орле</title>
+<meta name="description" content="Сеть кондитерских «Бисквит» в Орле. Торты на заказ от 1450 ₽ за кг: выберите дизайн, вес и начинку, цена посчитается сразу. Готовые торты и выпечка собственного производства.">
+<meta name="theme-color" content="#FEF9EF">
+<meta property="og:title" content="Бисквит — торты на заказ в Орле">
+<meta property="og:description" content="Выберите торт, вес и начинку — цена посчитается сразу. Забрать можно в магазине рядом с домом.">
+<meta property="og:image" content="images/s9.jpg">
+<link rel="icon" href="images/brand/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Marck+Script&family=Yeseva+One&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/s9.jpg" fetchpriority="high">
+<style>
+:root{
+  --cream:#FEF9EF; --beige:#DFBBA3; --caramel:#D7A887; --cocoa:#6E5551; --choc:#463F3A;
+  --cherry:#8E2F44; --cherry-d:#74243A; --cherry-50:#F7E6E7;
+  --sand:#F6EADB; --paper:#FFFDF9; --line:rgba(70,63,58,.14); --muted:#76665F;
+  --pistachio:#5F7A4A;
+  --r:20px; --r-sm:14px;
+  --f-display:'Yeseva One', Georgia, 'Times New Roman', serif;
+  --f-script:'Marck Script', 'Segoe Script', cursive;
+  --f-body:'Golos Text', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --gutter:16px; --bar-h:0px;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--cream);color:var(--choc);font:400 17px/1.55 var(--f-body);padding-bottom:var(--bar-h);overflow-x:hidden}
+[hidden]{display:none!important}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--cherry);outline-offset:2px;border-radius:8px}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gutter)}
+.ic{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- кнопки ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;border:0;font-weight:600;font-size:17px;text-decoration:none;transition:background .2s,transform .15s,box-shadow .2s;white-space:nowrap}
+.btn:active{transform:scale(.98)}
+.btn--main{background:var(--cherry);color:#fff;box-shadow:0 6px 18px -8px rgba(142,47,68,.7)}
+.btn--main:hover{background:var(--cherry-d)}
+.btn--line{background:transparent;color:var(--choc);box-shadow:inset 0 0 0 2px var(--choc)}
+.btn--line:hover{background:var(--choc);color:var(--cream)}
+.btn--soft{background:var(--paper);color:var(--choc);box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn--soft:hover{box-shadow:inset 0 0 0 1.5px var(--cocoa)}
+.btn--block{width:100%}
+.btn--sm{min-height:46px;padding:0 18px;font-size:15px}
+
+/* ---------- шапка ---------- */
+.top{position:sticky;top:0;z-index:40;background:rgba(254,249,239,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+.top.is-stuck{border-bottom-color:var(--line)}
+.top__in{display:flex;align-items:center;gap:16px;height:64px}
+.top__logo{display:block;flex:none}
+.top__logo img{height:46px;width:auto}
+.top__nav{display:none;gap:4px;margin-left:12px}
+.top__nav a{padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:500;font-size:16px}
+.top__nav a:hover{background:var(--sand)}
+.top__right{margin-left:auto;display:flex;align-items:center;gap:8px}
+.top__phone{display:none;font-weight:600;text-decoration:none;font-size:17px}
+.top__call{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--sand);color:var(--choc)}
+.top .btn{min-height:46px;padding:0 18px;font-size:15px}
+@media (min-width:960px){
+  .top__in{height:76px}.top__logo img{height:56px}
+  .top__nav{display:flex}.top__phone{display:block}.top__call{display:none}
+}
+
+/* ---------- первый экран ---------- */
+.hero{position:relative;padding:20px 0 40px;overflow:hidden}
+.hero__grid{display:grid;gap:8px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--cocoa)}
+.kicker::before{content:"";width:28px;height:1.5px;background:currentColor}
+.wordmark{margin:6px 0 0;font:400 clamp(76px,22vw,150px)/.95 var(--f-script);color:var(--cocoa);letter-spacing:-.01em}
+.wordmark small{display:block;font:400 clamp(15px,3.8vw,18px)/1.3 var(--f-body);letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin:10px 0 0 .3em}
+.hero__lead{font:400 clamp(21px,5.4vw,30px)/1.3 var(--f-display);margin:22px 0 26px;max-width:21em;color:var(--choc)}
+.hero__lead em{font-style:normal;color:var(--cherry)}
+.hero__cta{display:flex;gap:10px}
+.hero__cta .btn--main{flex:1 1 auto;max-width:340px;padding:0 20px}
+.hero__cta .btn--line{padding:0 20px}
+.facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:10px 22px;margin:26px 0 0;padding:0}
+.facts div{display:flex;flex-direction:column}
+.facts dt{font:400 19px/1.1 var(--f-display);color:var(--choc);white-space:nowrap}
+.facts dd{margin:3px 0 0;font-size:13px;line-height:1.3;color:var(--muted)}
+@media (min-width:520px){.facts{gap:10px 34px}.facts dt{font-size:23px}.facts dd{font-size:14px}}
+
+.stand{position:relative;width:min(100%,520px);aspect-ratio:1/.92;margin:18px auto 0}
+.stand__doily{position:absolute;inset:4% 6% 6%;width:88%;height:auto}
+.stand img{position:absolute;mix-blend-mode:multiply}
+.stand__main{left:17%;top:2%;width:66%}
+.stand__l{left:-2%;bottom:0;width:40%}
+.stand__r{right:-3%;bottom:2%;width:40%}
+.tag{position:absolute;right:4%;top:6%;transform:rotate(8deg);transform-origin:50% -30px;background:var(--paper);border:1.5px solid var(--cocoa);border-radius:10px 10px 10px 10px;padding:14px 14px 10px;text-align:center;box-shadow:0 10px 20px -12px rgba(70,63,58,.5);text-decoration:none;animation:sway 5s ease-in-out infinite}
+.tag::before{content:"";position:absolute;top:6px;left:50%;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:var(--cream);box-shadow:inset 0 0 0 1.5px var(--cocoa)}
+.tag::after{content:"";position:absolute;bottom:100%;left:50%;width:1.5px;height:34px;background:var(--cocoa);transform:translateY(8px)}
+.tag b{display:block;font:400 26px/1 var(--f-display);margin-top:6px}
+.tag span{display:block;font-size:13px;line-height:1.3;color:var(--muted);margin-top:4px}
+@keyframes sway{50%{transform:rotate(4deg)}}
+@media (min-width:960px){
+  .hero{padding:40px 0 72px}
+  .hero__grid{grid-template-columns:1.05fr 1fr;align-items:center;gap:40px}
+  .stand{margin:0 0 0 auto}
+}
+
+/* ---------- секции ---------- */
+.sec{padding:56px 0}
+.sec__head{margin-bottom:24px}
+.sec__title{font:400 clamp(34px,8vw,54px)/1.05 var(--f-display);margin:0;color:var(--choc)}
+.sec__title .s{font-family:var(--f-script);color:var(--cherry);font-size:1.15em}
+.sec__lead{margin:12px 0 0;max-width:36em;color:var(--muted);font-size:17px}
+@media (min-width:960px){.sec{padding:88px 0}.sec__head{margin-bottom:36px}}
+
+.scallop{position:relative}
+.scallop::before{content:"";position:absolute;left:0;right:0;top:-13px;height:14px;background:radial-gradient(circle at 13px 14px,var(--bg) 12.5px,transparent 13px) 0 0/26px 14px repeat-x}
+
+/* ---------- каталог ---------- */
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 calc(var(--gutter)*-1);padding:2px var(--gutter) 6px;scroll-snap-type:x proximity}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;display:inline-flex;align-items:center;gap:8px;min-height:50px;padding:0 20px;border-radius:999px;border:0;background:var(--paper);box-shadow:inset 0 0 0 1.5px var(--line);font-weight:600;font-size:16px;scroll-snap-align:start}
+.tab small{font-weight:500;color:var(--muted);font-size:14px}
+.tab[aria-selected=true]{background:var(--choc);color:var(--cream);box-shadow:none}
+.tab[aria-selected=true] small{color:var(--beige)}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:10px calc(var(--gutter)*-1) 0;padding:2px var(--gutter) 4px}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;min-height:42px;padding:0 16px;border-radius:999px;border:0;background:transparent;font-size:15px;font-weight:500;color:var(--cocoa);box-shadow:inset 0 0 0 1.5px transparent}
+.chip[aria-pressed=true]{background:var(--sand);color:var(--choc);box-shadow:inset 0 0 0 1.5px var(--caramel)}
+.cat-tools{display:grid;gap:12px;margin-top:14px}
+.cat-note{margin:0;font-size:15px;color:var(--muted);max-width:44em}
+.search{position:relative}
+.search input{width:100%;min-height:52px;border-radius:999px;border:1.5px solid var(--line);background:var(--paper);padding:0 18px 0 48px;font-size:16px}
+.search input:focus{outline:none;border-color:var(--cocoa)}
+.search .ic{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted)}
+@media (min-width:760px){.cat-tools{grid-template-columns:1fr 340px;align-items:center}}
+
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
+@media (min-width:640px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+@media (min-width:1000px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}}
+.card{position:relative;display:flex;flex-direction:column;background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:0 0 0 1px var(--line);transition:box-shadow .2s,transform .2s;animation:rise .35s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}}
+@media (hover:hover){.card:hover{box-shadow:0 0 0 1px var(--caramel),0 16px 30px -18px rgba(70,63,58,.45);transform:translateY(-2px)}}
+.card__ph{position:relative;aspect-ratio:1;background:#fff;border:0;padding:0;width:100%;cursor:zoom-in}
+.card__ph img{width:100%;height:100%;object-fit:contain;padding:6%}
+.card--cover .card__ph img{object-fit:cover;padding:0}
+.stamp{position:absolute;left:10px;top:10px;font:400 17px/1 var(--f-display);background:var(--cream);color:var(--choc);border:1.5px solid var(--cocoa);border-radius:8px;padding:6px 9px 5px;transform:rotate(-4deg)}
+.card__body{display:flex;flex-direction:column;gap:4px;padding:12px 12px 14px;flex:1;border-top:1px dashed var(--line)}
+.card__title{margin:0;font-size:16px;font-weight:600;line-height:1.3}
+.card__meta{margin:0;font-size:13.5px;color:var(--muted);line-height:1.35}
+.card__desc{margin:2px 0 0;font-size:14px;color:var(--muted);line-height:1.4}
+.card__price{margin:auto 0 0;padding-top:6px;font-size:18px;font-weight:700}
+.card__price span{font-size:14px;font-weight:500;color:var(--muted)}
+.card__price a{font-size:14px;font-weight:600;color:var(--cherry);text-decoration:underline;text-underline-offset:3px}
+.card .btn{margin-top:10px;min-height:46px;font-size:15px;padding:0 12px}
+@media (min-width:640px){.card__body{padding:14px 16px 16px}.card__title{font-size:17px}}
+.more{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:24px}
+.more small{color:var(--muted);font-size:14px}
+.empty{grid-column:1/-1;background:var(--paper);border:1.5px dashed var(--caramel);border-radius:var(--r);padding:28px 20px;text-align:center;color:var(--muted)}
+
+/* ---------- заказ ---------- */
+.order{--bg:var(--sand);background:var(--sand)}
+.order__grid{display:grid;gap:24px}
+@media (min-width:1000px){.order__grid{grid-template-columns:minmax(0,1fr) 380px;gap:40px;align-items:start}}
+.order__grid>*{min-width:0}
+.step{min-width:0;border:0;margin:0 0 14px;padding:20px 16px;background:var(--paper);border-radius:var(--r);box-shadow:0 0 0 1px var(--line)}
+@media (min-width:640px){.step{padding:24px 26px}}
+.step legend{float:left;width:100%;padding:0;display:flex;align-items:baseline;gap:12px;font:400 22px/1.2 var(--f-display);margin-bottom:6px}
+.step legend i{font:400 26px/1 var(--f-script);color:var(--cherry);font-style:normal;min-width:20px}
+.step legend small{font:500 14px/1 var(--f-body);color:var(--muted)}
+.step legend + *{clear:both}
+.hint{margin:0 0 14px;font-size:15px;color:var(--muted)}
+.field{display:block;margin-top:12px}
+.field>span{display:block;font-size:15px;font-weight:600;margin-bottom:6px}
+.inp{width:100%;min-height:54px;border-radius:var(--r-sm);border:1.5px solid rgba(70,63,58,.22);background:#fff;padding:12px 16px;font-size:17px;transition:border-color .2s,box-shadow .2s}
+textarea.inp{min-height:84px;resize:vertical;line-height:1.4}
+select.inp{appearance:none;-webkit-appearance:none;padding-right:44px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' fill='none' stroke='%23463F3A' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M1 1l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 18px center}
+.inp:focus{outline:none;border-color:var(--cocoa);box-shadow:0 0 0 4px rgba(215,168,135,.35)}
+.two{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:520px){.two{grid-template-columns:1fr 1fr}}
+.is-bad .inp,.inp.is-bad{border-color:var(--cherry);box-shadow:0 0 0 3px var(--cherry-50)}
+.err{display:none;margin:8px 0 0;font-size:14px;font-weight:600;color:var(--cherry)}
+.is-bad .err{display:block}
+
+.picked{display:flex;align-items:center;gap:14px;padding:10px;border-radius:var(--r-sm);background:var(--cream);box-shadow:inset 0 0 0 1.5px var(--caramel);margin-top:12px}
+.picked img{width:72px;height:72px;border-radius:10px;background:#fff;object-fit:contain;flex:none}
+.picked img.cover{object-fit:cover}
+.picked b{display:block;font-size:16px;line-height:1.3}
+.picked span{font-size:14px;color:var(--muted)}
+.picked button{margin-left:auto;flex:none;width:40px;height:40px;border-radius:50%;border:0;background:transparent;color:var(--muted);display:grid;place-items:center}
+.picked button:hover{background:var(--sand);color:var(--choc)}
+.picked.warn{box-shadow:inset 0 0 0 1.5px var(--line);background:#fff}
+.cake-opts{display:grid;gap:12px;margin-top:12px}
+@media (min-width:640px){.cake-opts{grid-template-columns:1fr auto;align-items:end}}
+.upload{display:flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 20px;border-radius:var(--r-sm);border:1.5px dashed var(--cocoa);background:transparent;font-weight:600;font-size:16px;cursor:pointer;color:var(--cocoa)}
+.upload:hover{background:var(--cream)}
+.upload input{position:absolute;opacity:0;width:1px;height:1px}
+.link-btn{background:none;border:0;padding:0;color:var(--cherry);font-weight:600;text-decoration:underline;text-underline-offset:3px;font-size:15px}
+
+.weights{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+@media (min-width:640px){.weights{grid-template-columns:repeat(6,1fr)}}
+.opt{position:relative;display:block;cursor:pointer}
+.opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.opt__box{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:72px;border-radius:var(--r-sm);background:#fff;box-shadow:inset 0 0 0 1.5px rgba(70,63,58,.2);text-align:center;padding:8px 6px;transition:box-shadow .15s,background .15s}
+.opt__box b{font:400 22px/1 var(--f-display)}
+.opt__box span{font-size:13px;color:var(--muted);line-height:1.25}
+.opt input:checked + .opt__box{background:var(--cherry);box-shadow:none;color:#fff}
+.opt input:checked + .opt__box span{color:rgba(255,255,255,.85)}
+.opt input:focus-visible + .opt__box{outline:3px solid var(--cherry);outline-offset:2px}
+.tip{margin:12px 0 0;font-size:14.5px;color:var(--muted)}
+.tip a{color:var(--cherry);font-weight:600}
+
+.fills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (min-width:640px){.fills{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}}
+.fill .opt__box{flex-direction:column;gap:6px;min-height:96px;padding:10px 6px}
+@media (min-width:640px){.fill .opt__box{flex-direction:row;justify-content:flex-start;gap:10px;min-height:66px;padding:8px 10px;text-align:left}}
+.fill .opt__box img,.fill .mono{width:44px;height:44px;border-radius:10px;flex:none;object-fit:cover;background:#fff}
+.fill .mono{display:grid;place-items:center;background:var(--sand);font:400 26px/1 var(--f-script);color:var(--cocoa)}
+.fill .opt__box b{font:600 15px/1.25 var(--f-body)}
+.fill input:checked + .opt__box .mono{background:rgba(255,255,255,.2);color:#fff}
+.fill-desc{margin:12px 0 0;padding:12px 14px;border-radius:var(--r-sm);background:var(--cream);font-size:15px;line-height:1.45;border-left:3px solid var(--caramel)}
+.fill-desc:empty{display:none}
+
+.packs{display:grid;gap:8px}
+@media (min-width:640px){.packs{grid-template-columns:repeat(3,1fr)}}
+.pack .opt__box{align-items:flex-start;text-align:left;padding:12px 14px;min-height:80px}
+.pack .opt__box b{font:600 16px/1.3 var(--f-body)}
+.pack .opt__box span{font-size:14px}
+
+.submit-row{margin-top:6px}
+.consent{margin:12px 0 0;font-size:13.5px;color:var(--muted);text-align:center}
+
+/* чек */
+.receipt{position:relative;background:var(--paper);padding:24px 22px 34px;border-radius:var(--r) var(--r) 0 0;box-shadow:0 0 0 1px var(--line);
+  -webkit-mask:linear-gradient(#000 0 0) top/100% calc(100% - 12px) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/24px 12px repeat-x;
+  mask:linear-gradient(#000 0 0) top/100% calc(100% - 12px) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/24px 12px repeat-x}
+@media (min-width:1000px){.receipt-wrap{position:sticky;top:96px}}
+.receipt h3{margin:0;font:400 30px/1 var(--f-script);color:var(--cocoa);text-align:center}
+.receipt__sub{text-align:center;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:6px 0 16px}
+.rlist{margin:0;padding:0;list-style:none;font-size:15px}
+.rlist li{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.rlist li span:first-child{color:var(--muted);flex:none}
+.rlist li span:last-child{text-align:right;font-weight:500;overflow-wrap:anywhere}
+.rlist li.empty-v span:last-child{color:#b3a59c;font-weight:400}
+.rsum{margin-top:14px;font-size:15px}
+.rsum div{display:flex;justify-content:space-between;gap:12px;padding:3px 0}
+.rsum .total{margin-top:8px;padding-top:12px;border-top:2px solid var(--choc);align-items:baseline}
+.rsum .total span:first-child{font-weight:600}
+.rsum .total b{font:400 30px/1 var(--f-display);color:var(--choc)}
+.rsum .dep{color:var(--muted);font-size:14px}
+.rnote{margin:14px 0 0;font-size:13.5px;color:var(--muted);line-height:1.45}
+.receipt-wrap .btn{margin-top:14px;display:none}
+@media (min-width:1000px){.receipt-wrap .btn{display:flex}}
+
+.done{display:none;background:var(--paper);border-radius:var(--r);box-shadow:0 0 0 1px var(--line);padding:36px 22px;text-align:center;max-width:640px;margin:0 auto}
+.done.on{display:block;animation:rise .4s ease both}
+.done__ic{width:84px;height:84px;margin:0 auto 18px;border-radius:50%;background:var(--cherry);color:#fff;display:grid;place-items:center}
+.done__ic .ic{width:40px;height:40px;stroke-width:2.5}
+.done h3{font:400 clamp(28px,7vw,38px)/1.15 var(--f-display);margin:0}
+.done p{color:var(--muted);margin:12px auto 0;max-width:30em}
+.done .rlist{text-align:left;margin:24px 0 0}
+.done__btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+
+/* ---------- галерея ---------- */
+.gal{display:grid;grid-auto-flow:column;grid-auto-columns:76%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(var(--gutter)*-1);padding:4px var(--gutter) 12px;scrollbar-width:none}
+.gal::-webkit-scrollbar{display:none}
+.gtile{position:relative;scroll-snap-align:center;background:var(--sand);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.gtile button.ph{border:0;padding:0;background:none;cursor:zoom-in;aspect-ratio:1;width:100%}
+.gtile img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;padding:4%}
+.gtile__bar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 14px 14px}
+.gtile__bar b{font:400 22px/1 var(--f-display)}
+.gtile__bar small{display:block;font-size:13px;color:var(--muted);margin-top:3px}
+.gtile .btn{min-height:44px;padding:0 16px;font-size:15px}
+.gal-hint{margin:6px 0 0;font-size:14px;color:var(--muted)}
+@media (min-width:760px){
+  .gal{grid-auto-flow:row dense;grid-auto-columns:auto;grid-template-columns:repeat(4,1fr);overflow:visible;margin:0;padding:0;gap:16px}
+  .gtile.big{grid-column:span 2;grid-row:span 2}
+  .gtile.big .gtile__bar b{font-size:28px}
+  .gal-hint{display:none}
+}
+
+/* ---------- почему мы ---------- */
+.why{background:var(--choc);color:var(--cream);--bg:var(--choc)}
+.why .sec__title{color:var(--cream)}
+.why .sec__title .s{color:var(--caramel)}
+.why__grid{display:grid;gap:0}
+.why__big{padding:8px 0 28px;border-bottom:1px solid rgba(254,249,239,.18)}
+.why__num{font:400 clamp(96px,28vw,200px)/.85 var(--f-display);color:var(--caramel);letter-spacing:-.02em}
+.why__num sup{font-size:.45em;vertical-align:.9em;margin-left:.04em}
+.why__big p{font-size:clamp(19px,4.6vw,24px);line-height:1.4;margin:14px 0 0;max-width:22em}
+.why__big p b{color:#fff;font-weight:600}
+.why__item{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;padding:26px 0;border-bottom:1px solid rgba(254,249,239,.18)}
+.why__item:last-child{border-bottom:0}
+.why__item i{grid-row:span 2;font:400 44px/1 var(--f-script);color:var(--caramel);font-style:normal;min-width:30px}
+.why__item h3{margin:0;font:400 24px/1.2 var(--f-display);color:#fff}
+.why__item p{margin:0;color:rgba(254,249,239,.78);font-size:16.5px;max-width:30em}
+@media (min-width:960px){
+  .why__grid{grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+  .why__big{border-bottom:0;border-right:1px solid rgba(254,249,239,.18);padding:0 48px 0 0}
+}
+
+/* ---------- контакты ---------- */
+.contacts__grid{display:grid;gap:20px}
+@media (min-width:960px){.contacts__grid{grid-template-columns:400px 1fr;gap:40px;align-items:start}}
+.cbox{background:var(--paper);border-radius:var(--r);box-shadow:0 0 0 1px var(--line);padding:22px 18px}
+@media (min-width:640px){.cbox{padding:26px}}
+.hours{display:flex;gap:14px;align-items:flex-start;padding-bottom:18px;margin-bottom:18px;border-bottom:1px dashed var(--line)}
+.hours .ic{width:28px;height:28px;color:var(--cherry);margin-top:2px}
+.hours b{display:block;font:400 24px/1.2 var(--f-display)}
+.hours span{font-size:15px;color:var(--muted)}
+.cbtns{display:grid;gap:10px}
+.cbtns .btn{justify-content:flex-start;padding:0 20px;min-height:58px}
+.cbtns .btn span{display:flex;flex-direction:column;align-items:flex-start;line-height:1.2}
+.cbtns .btn small{font-size:13px;font-weight:500;opacity:.8}
+.addr h3{margin:0 0 4px;font:400 26px/1.2 var(--f-display)}
+.addr>p{margin:0 0 16px;color:var(--muted);font-size:15px}
+.alist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:0 24px}
+@media (min-width:560px){.alist{grid-template-columns:1fr 1fr}}
+.alist a{display:flex;align-items:center;gap:10px;min-height:52px;padding:6px 0;border-bottom:1px dashed var(--line);text-decoration:none;font-size:16px}
+.alist a .ic{width:20px;height:20px;color:var(--caramel)}
+.alist a:hover{color:var(--cherry)}
+.alist a:hover .ic{color:var(--cherry)}
+
+.foot{background:var(--cocoa);color:var(--cream);padding:36px 0 40px;font-size:15px}
+.foot__in{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between}
+.foot__logo{background:var(--cream);border-radius:999px;padding:6px 14px;display:inline-block}
+.foot__logo img{height:46px;width:auto}
+.foot a{text-decoration:none}
+.foot p{margin:0;opacity:.85}
+
+/* ---------- нижняя панель (мобильная) ---------- */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(254,249,239,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:10px var(--gutter) calc(10px + env(safe-area-inset-bottom));display:flex;gap:10px;align-items:center;transform:translateY(110%);transition:transform .3s}
+.bar.on{transform:none}
+.bar .btn{flex:1;min-height:52px}
+.bar__ic{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--sand);color:var(--choc);flex:none;text-decoration:none}
+.bar__sum{display:none;flex-direction:column;line-height:1.15}
+.bar__sum small{font-size:13px;color:var(--muted)}
+.bar__sum b{font:400 22px/1.1 var(--f-display)}
+.bar.is-order .bar__sum{display:flex}
+.bar.is-order .bar__ic{display:none}
+@media (min-width:1000px){.bar{display:none}}
+
+/* ---------- карточка товара (диалог) ---------- */
+dialog.sheet{border:0;padding:0;margin:auto auto 0;width:100%;max-width:560px;max-height:92vh;border-radius:24px 24px 0 0;background:var(--paper);color:var(--choc);box-shadow:0 -20px 60px -20px rgba(0,0,0,.4);overflow:auto}
+dialog.sheet[open]{animation:up .3s ease both}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+dialog.sheet::backdrop{background:rgba(46,38,34,.55)}
+@media (min-width:700px){dialog.sheet{margin:auto;border-radius:24px}}
+.sheet__ph{position:relative;background:#fff;aspect-ratio:1;max-height:60vh;width:100%}
+.sheet__ph img{width:100%;height:100%;object-fit:contain}
+.sheet__ph.cover img{object-fit:cover}
+.sheet__x{position:absolute;right:12px;top:12px;width:46px;height:46px;border-radius:50%;border:0;background:rgba(254,249,239,.95);display:grid;place-items:center;box-shadow:0 2px 10px rgba(0,0,0,.12)}
+.sheet__body{padding:20px 20px calc(24px + env(safe-area-inset-bottom))}
+.sheet__body h3{margin:0;font:400 28px/1.15 var(--f-display)}
+.sheet__meta{margin:6px 0 0;color:var(--muted);font-size:15px}
+.sheet__desc{margin:14px 0 0;font-size:16px;line-height:1.5}
+.sheet__price{margin:16px 0 0;font-size:22px;font-weight:700}
+.sheet__price span{font-size:15px;font-weight:500;color:var(--muted)}
+.sheet__btns{display:grid;gap:10px;margin-top:18px}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 9.5c0 2.5 2.5 5 5 5l1.2-1.2-1.8-1-1 .8a3.6 3.6 0 0 1-1.9-1.9l.8-1-1-1.8z" stroke-width="1.4"/></symbol>
+  <symbol id="i-vk" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="6"/><path d="M6.5 8.5c.3 4.6 2.6 7.3 6.4 7.3h.6v-2.6c1.4.1 2.4 1.2 2.8 2.6h1.9a6 6 0 0 0-3-3.9c1.1-.7 2.2-2.1 2.5-3.4h-1.8c-.4 1.3-1.4 2.6-2.4 2.7V8.5h-1.8v4.6c-1.1-.3-2.5-1.6-2.6-4.6z" stroke-width="1.3"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12l3.5 2"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5l-4.5-4.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5l5 5 10-11"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h1.8l1.5-2h6.4l1.5 2h1.8A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z"/><circle cx="12" cy="12.5" r="3.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="top" id="top">
+  <div class="wrap top__in">
+    <a class="top__logo" href="#" aria-label="Бисквит — на главную"><img src="images/brand/logo.png" width="193" height="91" alt="Бисквит, кондитерская"></a>
+    <nav class="top__nav" aria-label="Разделы">
+      <a href="#catalog">Каталог</a>
+      <a href="#order">Заказ торта</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#contacts">Магазины</a>
+    </nav>
+    <div class="top__right">
+      <a class="top__phone" href="tel:+79155013637">+7 915 501-36-37</a>
+      <a class="top__call" href="tel:+79155013637" aria-label="Позвонить"><svg class="ic"><use href="#i-phone"/></svg></a>
+      <a class="btn btn--main" href="#order">Заказать торт</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ========== 1. Первый экран ========== -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <span class="kicker">Кондитерская в Орле</span>
+      <h1 class="wordmark">Бисквит<small>торты на заказ</small></h1>
+      <p class="hero__lead">Выберите торт, вес и начинку — <em>цена посчитается сразу</em>, а забрать заказ можно в магазине рядом с домом.</p>
+      <div class="hero__cta">
+        <a class="btn btn--main" href="#order">Заказать торт <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--line" href="#catalog">Каталог</a>
+      </div>
+      <dl class="facts">
+        <div><dt>от 1 450 ₽</dt><dd>за кг торта на заказ</dd></div>
+        <div><dt>за 3 дня</dt><dd>принимаем заказ</dd></div>
+        <div><dt>9:00–20:00</dt><dd>каждый день</dd></div>
+      </dl>
+    </div>
+    <div class="stand" aria-hidden="true">
+      <svg class="stand__doily" viewBox="0 0 400 400">
+        <circle cx="200" cy="200" r="188" fill="none" stroke="#D7A887" stroke-width="7" stroke-dasharray="0 15" stroke-linecap="round"/>
+        <circle cx="200" cy="200" r="176" fill="#DFBBA3" opacity=".55"/>
+        <circle cx="200" cy="200" r="150" fill="none" stroke="#FEF9EF" stroke-width="1.5" stroke-dasharray="3 6"/>
+        <circle cx="200" cy="200" r="120" fill="none" stroke="#FEF9EF" stroke-width="1" opacity=".8"/>
+      </svg>
+      <img class="stand__main" src="images/s9.jpg" width="600" height="600" alt="" fetchpriority="high">
+      <img class="stand__l" src="images/yubileynyy-tort-yu11.jpg" width="600" height="600" alt="">
+      <img class="stand__r" src="images/detskiy-tort-d55.jpg" width="600" height="600" alt="">
+      <a class="tag" href="#order" data-act="order" data-id="s9" tabindex="-1"><span>свадебный</span><b>№ С9</b><span>от 1 450 ₽/кг</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 2. Каталог ========== -->
+<section class="sec" id="catalog" style="padding-top:24px">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="sec__title">Каталог</h2>
+      <p class="sec__lead" id="catCount"></p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Разделы каталога" id="tabs"></div>
+    <div class="chips" id="chips" aria-label="Подразделы"></div>
+    <div class="cat-tools">
+      <p class="cat-note" id="catNote"></p>
+      <label class="search">
+        <span class="sr">Поиск по каталогу</span>
+        <svg class="ic"><use href="#i-search"/></svg>
+        <input type="search" id="q" placeholder="Номер или название: П32, Прага…" autocomplete="off" enterkeyhint="search">
+      </label>
+    </div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+    <div class="more" id="more"></div>
+  </div>
+</section>
+
+<!-- ========== 3. Онлайн-заказ ========== -->
+<section class="sec order scallop" id="order">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="sec__title">Заказать <span class="s">торт</span></h2>
+      <p class="sec__lead">Цена считается, пока вы заполняете форму. Минимальный вес — 2 кг, заказ — не позже чем за 3 суток. После заявки мы свяжемся с вами и всё подтвердим.</p>
+    </div>
+
+    <div class="order__grid" id="orderGrid">
+      <form id="form" novalidate>
+        <fieldset class="step" id="stCake">
+          <legend><i>1</i>Какой торт</legend>
+          <p class="hint">Выберите в каталоге, впишите номер или приложите фото торта, который понравился.</p>
+          <div id="cakePicked"></div>
+          <div class="cake-opts">
+            <label class="field" style="margin:0">
+              <span>Номер или название из каталога</span>
+              <input class="inp" id="cakeNum" name="cake" placeholder="Например, Д24" autocomplete="off">
+            </label>
+            <label class="upload">
+              <svg class="ic"><use href="#i-camera"/></svg> <span id="upText">Своё фото</span>
+              <input type="file" id="cakePhoto" accept="image/*">
+            </label>
+          </div>
+          <div id="photoPrev"></div>
+          <p class="tip"><button type="button" class="link-btn" data-go="catalog">Открыть каталог</button> — у каждого торта есть кнопка «Заказать».</p>
+          <p class="err">Выберите торт из каталога, укажите номер или приложите фото.</p>
+        </fieldset>
+
+        <fieldset class="step" id="stWeight">
+          <legend><i>2</i>Вес <small>и сколько гостей</small></legend>
+          <div class="weights" id="weights"></div>
+          <p class="tip">Гостей меньше десяти? Посмотрите <a href="#catalog" data-tab="den">торты на каждый день</a> — они уже готовы.</p>
+        </fieldset>
+
+        <fieldset class="step" id="stFill">
+          <legend><i>3</i>Начинка</legend>
+          <div class="fills" id="fills"></div>
+          <p class="fill-desc" id="fillDesc"></p>
+          <p class="err">Выберите начинку.</p>
+        </fieldset>
+
+        <fieldset class="step" id="stDate">
+          <legend><i>4</i>Когда нужен торт</legend>
+          <p class="hint" id="dateHint">Заказы принимаем минимум за 3 суток.</p>
+          <div class="two">
+            <label class="field" style="margin:0" id="fDate">
+              <span>Дата</span>
+              <input class="inp" type="date" id="date" name="date" required>
+              <p class="err">Выберите дату — не раньше чем через 3 суток.</p>
+            </label>
+            <label class="field" style="margin:0" id="fTime">
+              <span>Время</span>
+              <select class="inp" id="time" name="time" required></select>
+              <p class="err">Выберите время.</p>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step">
+          <legend><i>5</i>Надпись на торте <small>необязательно</small></legend>
+          <input class="inp" id="text" name="text" placeholder="С днём рождения, Аня!" maxlength="120">
+        </fieldset>
+
+        <fieldset class="step" id="stPoint">
+          <legend><i>6</i>Где забрать</legend>
+          <label class="field" style="margin:0">
+            <span class="sr">Магазин для самовывоза</span>
+            <select class="inp" id="point" name="point" required></select>
+          </label>
+          <p class="err">Выберите магазин, где удобно забрать торт.</p>
+        </fieldset>
+
+        <fieldset class="step">
+          <legend><i>7</i>Упаковка</legend>
+          <div class="packs" id="packs"></div>
+        </fieldset>
+
+        <fieldset class="step" id="stContact">
+          <legend><i>8</i>Как с вами связаться</legend>
+          <div class="two">
+            <label class="field" style="margin:0" id="fName">
+              <span>Имя</span>
+              <input class="inp" id="name" name="name" autocomplete="given-name" placeholder="Как к вам обращаться">
+              <p class="err">Напишите, как к вам обращаться.</p>
+            </label>
+            <label class="field" style="margin:0" id="fPhone">
+              <span>Телефон</span>
+              <input class="inp" id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__">
+              <p class="err">Проверьте номер — нужно 10 цифр после +7.</p>
+            </label>
+          </div>
+          <label class="field">
+            <span>Пожелания <small style="font-weight:400;color:var(--muted)">необязательно</small></span>
+            <textarea class="inp" id="comment" name="comment" rows="2" placeholder="Например: без надписи на боку, цифра 5 сверху"></textarea>
+          </label>
+        </fieldset>
+
+        <div class="submit-row">
+          <button class="btn btn--main btn--block" type="submit">Отправить заявку</button>
+          <p class="consent">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+        </div>
+      </form>
+
+      <aside class="receipt-wrap" aria-label="Ваш заказ">
+        <div class="receipt">
+          <h3>Ваш заказ</h3>
+          <p class="receipt__sub">кондитерская «Бисквит»</p>
+          <ul class="rlist" id="rlist"></ul>
+          <div class="rsum" id="rsum"></div>
+          <p class="rnote">Это цена по минимальной ставке — 1 450 ₽ за кг. Точную сумму подтвердим, когда свяжемся с вами.</p>
+        </div>
+        <button class="btn btn--main btn--block" type="submit" form="form">Отправить заявку</button>
+      </aside>
+    </div>
+
+    <div class="done" id="done" tabindex="-1">
+      <div class="done__ic"><svg class="ic"><use href="#i-check"/></svg></div>
+      <h3>Заявка отправлена, мы свяжемся с вами</h3>
+      <p id="doneText"></p>
+      <ul class="rlist" id="doneList"></ul>
+      <div class="done__btns">
+        <a class="btn btn--main" href="tel:+79155013637"><svg class="ic"><use href="#i-phone"/></svg>Позвонить нам</a>
+        <button class="btn btn--soft" type="button" id="again">Оформить ещё один</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4. Галерея ========== -->
+<section class="sec" id="gallery">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="sec__title">Галерея</h2>
+      <p class="sec__lead">Понравился торт? Нажмите «Хочу такой» — его номер сам появится в заявке.</p>
+    </div>
+    <div class="gal" id="gal"></div>
+    <p class="gal-hint">Листайте вбок →</p>
+  </div>
+</section>
+
+<!-- ========== 5. Почему мы ========== -->
+<section class="sec why scallop" id="why">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="sec__title">Почему <span class="s">«Бисквит»</span></h2>
+    </div>
+    <div class="why__grid">
+      <div class="why__big">
+        <div class="why__num">200<sup>+</sup></div>
+        <p><b>видов тортов и пирожных</b> и ещё больше 150 видов конфет. Есть из чего выбрать и к празднику, и просто к чаю.</p>
+      </div>
+      <div>
+        <div class="why__item">
+          <i>1</i>
+          <h3>Дегустации каждую неделю</h3>
+          <p>В магазинах сети каждую неделю проходят дегустации тортов: можно попробовать, прежде чем брать целый.</p>
+        </div>
+        <div class="why__item">
+          <i>2</i>
+          <h3>Без посредников</h3>
+          <p>Работаем напрямую с производителями: «Нивой Черноземья», «Хэллой», «Тортьяной». Поэтому и цены держим низкими.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 6. Контакты ========== -->
+<section class="sec" id="contacts">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="sec__title">Магазины <span class="s">и контакты</span></h2>
+    </div>
+    <div class="contacts__grid">
+      <div class="cbox">
+        <div class="hours">
+          <svg class="ic"><use href="#i-clock"/></svg>
+          <div><b>Каждый день, <span style="white-space:nowrap">9:00–20:00</span></b><span>Без выходных. Время одно для всех магазинов.</span></div>
+        </div>
+        <div class="cbtns">
+          <a class="btn btn--main" href="tel:+79155013637"><svg class="ic"><use href="#i-phone"/></svg><span>Позвонить<small>+7 915 501-36-37</small></span></a>
+          <a class="btn btn--soft" href="tel:+74862542898"><svg class="ic"><use href="#i-phone"/></svg><span>Городской номер<small>+7 (4862) 54-28-98</small></span></a>
+          <a class="btn btn--soft" href="https://wa.me/79102609496?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!" target="_blank" rel="noopener"><svg class="ic"><use href="#i-chat"/></svg><span>Написать в WhatsApp<small>+7 910 260-94-96</small></span></a>
+          <a class="btn btn--soft" href="https://vk.com/biskvitcoffee" target="_blank" rel="noopener"><svg class="ic"><use href="#i-vk"/></svg><span>Написать во ВКонтакте<small>vk.com/biskvitcoffee</small></span></a>
+        </div>
+      </div>
+      <div class="cbox addr">
+        <h3>Наши магазины в Орле</h3>
+        <p>Нажмите на адрес — откроется карта.</p>
+        <ul class="alist" id="alist"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <a class="foot__logo" href="#"><img src="images/brand/logo.png" width="193" height="91" alt="Бисквит" loading="lazy"></a>
+    <p>Сеть кондитерских «Бисквит», Орёл<br>Каждый день 9:00–20:00</p>
+    <p><a href="tel:+79155013637">+7 915 501-36-37</a><br><a href="tel:+74862542898">+7 (4862) 54-28-98</a></p>
+  </div>
+</footer>
+
+<div class="bar" id="bar">
+  <div class="bar__sum"><small id="barKg">2 кг</small><b id="barSum">от 2 980 ₽</b></div>
+  <a class="btn btn--main" href="#order" id="barBtn">Заказать торт</a>
+  <a class="bar__ic" href="tel:+79155013637" aria-label="Позвонить"><svg class="ic"><use href="#i-phone"/></svg></a>
+  <a class="bar__ic" href="https://wa.me/79102609496" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg class="ic"><use href="#i-chat"/></svg></a>
+</div>
+
+<dialog class="sheet" id="sheet" aria-labelledby="sheetTitle"></dialog>
+
+<script id="data" type="application/json">[{"i":"detskiy-tort-d1","c":"Д1","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":1},{"i":"detskiy-tort-d2","c":"Д2","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":2},{"i":"detskiy-tort-d3","c":"Д3","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":3},{"i":"detskiy-tort-d7","c":"Д7","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":7},{"i":"detskiy-tort-d8","c":"Д8","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":8},{"i":"detskiy-tort-d9","c":"Д9","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":9},{"i":"detskiy-tort-d10","c":"Д10","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":10},{"i":"detskiy-tort-d12","c":"Д12","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":12},{"i":"detskiy-tort-d13","c":"Д13","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":13},{"i":"detskiy-tort-d14","c":"Д14","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":14},{"i":"detskiy-tort-d17","c":"Д17","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":17},{"i":"detskiy-tort-d19","c":"Д19","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":19},{"i":"detskiy-tort-d22","c":"Д22","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":22},{"i":"detskiy-tort-d24","c":"Д24","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":24},{"i":"detskiy-tort-d25","c":"Д25","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":25},{"i":"detskiy-tort-d29","c":"Д29","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":29},{"i":"detskiy-tort-d32","c":"Д32","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":32},{"i":"detskiy-tort-d36","c":"Д36","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":36},{"i":"detskiy-tort-d42","c":"Д42","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":42},{"i":"detskiy-tort-d48","c":"Д48","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":48},{"i":"detskiy-tort-d50","c":"Д50","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":50},{"i":"detskiy-tort-d51","c":"Д51","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":51},{"i":"detskiy-tort-d53","c":"Д53","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":53},{"i":"detskiy-tort-d55","c":"Д55","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":55},{"i":"detskiy-tort-d56","c":"Д56","n":"Детский торт","t":"zakaz","s":"Детские","m":"","w":[],"p":1450,"pt":"kg","d":"","num":56},{"i":"p1","c":"П1","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":1},{"i":"p2","c":"П2","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":2},{"i":"p3","c":"П3","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":3},{"i":"p4","c":"П4","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":4},{"i":"p5","c":"П5","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":5},{"i":"p6","c":"П6","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":6},{"i":"p7","c":"П7","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":7},{"i":"p9","c":"П9","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":9},{"i":"p10","c":"П10","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":10},{"i":"p11","c":"П11","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":11},{"i":"p12","c":"П12","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":12},{"i":"p16","c":"П16","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":16},{"i":"p17","c":"П17","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":17},{"i":"p18","c":"П18","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":18},{"i":"p19","c":"П19","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":19},{"i":"p20","c":"П20","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":20},{"i":"p21","c":"П21","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":21},{"i":"p22","c":"П22","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":22},{"i":"p23","c":"П23","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":23},{"i":"p24","c":"П24","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":24},{"i":"p25","c":"П25","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":25},{"i":"p26","c":"П26","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":26},{"i":"p27","c":"П27","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":27},{"i":"p28","c":"П28","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":28},{"i":"p31","c":"П31","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":31},{"i":"p32","c":"П32","n":"Праздничный торт","t":"zakaz","s":"Праздничные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":32},{"i":"s1","c":"С1","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":1},{"i":"s3","c":"С3","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":3},{"i":"s4","c":"С4","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":4},{"i":"s5","c":"С5","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":5},{"i":"s6","c":"С6","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":6},{"i":"s7","c":"С7","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":7},{"i":"s8","c":"С8","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":8},{"i":"s9","c":"С9","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":9},{"i":"s10","c":"С10","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":10},{"i":"s11","c":"С11","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":11},{"i":"s13","c":"С13","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":13},{"i":"s14","c":"С14","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":14},{"i":"s17","c":"С17","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":17},{"i":"s19","c":"С19","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":19},{"i":"s20","c":"С20","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":20},{"i":"s22","c":"С22","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":22},{"i":"s23","c":"С23","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":23},{"i":"s26","c":"С26","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":26},{"i":"s27","c":"С27","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":27},{"i":"s30","c":"С30","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":30},{"i":"s31","c":"С31","n":"Свадебный торт","t":"zakaz","s":"Свадебные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":31},{"i":"tort-ikra","c":"","n":"«Банка с икрой»","t":"zakaz","s":"Торты-приколы","m":"","w":[],"p":1450,"pt":"kg","d":"","num":0},{"i":"molodozheny","c":"","n":"«Влюбленные»","t":"zakaz","s":"Торты-приколы","m":"","w":[],"p":1450,"pt":"kg","d":"","num":0},{"i":"25-let","c":"","n":"«25 лет»","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":0},{"i":"yubileynyy-tort-yu2","c":"Ю2","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":2},{"i":"yubileynyy-tort-yu3","c":"Ю3","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":3},{"i":"yubileynyy-tort-yu4","c":"Ю4","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":4},{"i":"yubileynyy-tort-yu5","c":"Ю5","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":5},{"i":"yubileynyy-tort-yu6","c":"Ю6","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":6},{"i":"yubileynyy-tort-yu7","c":"Ю7","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":7},{"i":"yubileynyy-tort-yu8","c":"Ю8","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":8},{"i":"yubileynyy-tort-yu9","c":"Ю9","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":9},{"i":"yubileynyy-tort-yu10","c":"Ю10","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":10},{"i":"yubileynyy-tort-yu11","c":"Ю11","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":11},{"i":"yubileynyy-tort-yu12","c":"Ю12","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":12},{"i":"yubileynyy-tort-yu13","c":"Ю13","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":13},{"i":"yubileynyy-tort-yu14","c":"Ю14","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":14},{"i":"yubileynyy-tort-yu16","c":"Ю16","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":16},{"i":"yubileynyy-tort-yu17","c":"Ю17","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":17},{"i":"yubileynyy-tort-yu18","c":"Ю18","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":18},{"i":"yubileynyy-tort-yu19","c":"Ю19","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":19},{"i":"yubileynyy-tort-yu20","c":"Ю20","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":20},{"i":"yubileynyy-tort-yu21","c":"Ю21","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":21},{"i":"yubileynyy-tort-yu22","c":"Ю22","n":"Юбилейный торт","t":"zakaz","s":"Юбилейные","m":"","w":[],"p":1450,"pt":"kg","d":"","num":22},{"i":"nachinka-tvorozhnyy","c":"","n":"«Творожный»","t":"nach","s":"Начинки","m":"","w":[],"p":null,"pt":null,"d":"Бисквит с прослойкой сырного крема с добавлением кусочков абрикоса.","num":0},{"i":"nachinka-tryufel","c":"","n":"«Трюфель»","t":"nach","s":"Начинки","m":"","w":[],"p":null,"pt":null,"d":"Шоколадные бисквиты соединены сливочно-шоколадным кремом и прослойкой вареной сгущенки.","num":0},{"i":"nachinka-smetannik","c":"","n":"«Сметанник»","t":"nach","s":"Начинки","m":"","w":[],"p":null,"pt":null,"d":"Медовые коржи соединены сметанным кремом.","num":0},{"i":"nachinka-klubnichka","c":"","n":"«Клубничка»","t":"nach","s":"Начинки","m":"","w":[],"p":null,"pt":null,"d":"Ванильные бисквиты пропитаны ванильным сиропом и соединены творожно-клубничным кремом.","num":0},{"i":"nachinka-vishnevyy-sad","c":"","n":"«Вишневый вальс»","t":"nach","s":"Начинки","m":"","w":[],"p":null,"pt":null,"d":"Шоколадные бисквиты соединены творожным кремом с добавлением свежей вишни.","num":0},{"i":"tort-dolchie-vishnia","c":"","n":"«Долче вишня»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[0.65],"p":940,"pt":"fix","d":"","num":0},{"i":"tort-mramornyi","c":"","n":"«Мраморный»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[0.7],"p":970,"pt":"fix","d":"","num":0},{"i":"tort-slivochno-ioghurtovyi","c":"","n":"«Сливочно-йогуртовый»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[0.7],"p":970,"pt":"fix","d":"","num":0},{"i":"tort-plombirnyi-s-vishniei","c":"","n":"«Пломбирный с вишней»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[0.75],"p":1000,"pt":"fix","d":"","num":0},{"i":"tort-abrikosovyi-rai","c":"","n":"«Абрикосовый рай»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[0.8],"p":1030,"pt":"fix","d":"","num":0},{"i":"krakussim","c":"","n":"«Кракуссим»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[0.6],"p":910,"pt":"fix","d":"","num":0},{"i":"shokoladny-kapriz","c":"","n":"«Шоколадный каприз»","t":"den","s":"Хэлла","m":"Хэлла","w":[0.6,1.1],"p":910,"pt":"fix","d":"","num":0},{"i":"tort-malinovyi-zvon","c":"","n":"«Малиновый звон»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[0.65],"p":940,"pt":"fix","d":"","num":0},{"i":"ananasovyi-muslin","c":"","n":"«Ананасовый муслин»","t":"den","s":"Хэлла","m":"Хэлла","w":[1.0],"p":1150,"pt":"fix","d":"","num":0},{"i":"tvorojno-fruktovy-900g","c":"","n":"«Творожно-фруктовый»","t":"den","s":"Хэлла","m":"Хэлла","w":[0.9],"p":1090,"pt":"fix","d":"","num":0},{"i":"aristokrat-1kg","c":"","n":"«Аристократ»","t":"den","s":"Хэлла","m":"Хэлла","w":[1.0],"p":1150,"pt":"fix","d":"","num":0},{"i":"senator","c":"","n":"«Сенатор»","t":"den","s":"Мистер Торт","m":"Мистер Торт","w":[],"p":1150,"pt":"fix","d":"","num":0},{"i":"krasnyi-barhat-1.1kg","c":"","n":"«Красный бархат»","t":"den","s":"Мистер Торт","m":"Мистер Торт","w":[1.1],"p":1210,"pt":"fix","d":"","num":0},{"i":"acapella","c":"","n":"«Акапелла»","t":"den","s":"Мистер Торт","m":"Мистер Торт","w":[1.5],"p":1450,"pt":"fix","d":"Тирамису с персиком, заварной крем с вишней, карамельный, клубничный, шоколадный, с черной смородиной, бисквит фирменный.","num":0},{"i":"viktoriya-1kg","c":"","n":"«Виктория»","t":"den","s":"Мистер Торт","m":"Мистер Торт","w":[1.0],"p":1150,"pt":"fix","d":"","num":0},{"i":"mister","c":"","n":"«Мистер»","t":"den","s":"Мистер Торт","m":"Мистер Торт","w":[2.3],"p":1500,"pt":"fix","d":"","num":0},{"i":"mindalnyi","c":"","n":"«Миндальный»","t":"den","s":"Мистер Торт","m":"Мистер Торт","w":[1.2],"p":1270,"pt":"fix","d":"","num":0},{"i":"molochnaya-devochka-mt","c":"","n":"«Молочная девочка»","t":"den","s":"Мистер Торт","m":"Мистер Торт","w":[],"p":1190,"pt":"fix","d":"","num":0},{"i":"fistashkovy-1.2kg","c":"","n":"Фисташковый торт","t":"den","s":"Мистер Торт","m":"Мистер Торт","w":[1.2],"p":1270,"pt":"fix","d":"Три слоя фирменного бисквита прослоены фишташковым кремом. Верх торта покрыт шоколадом","num":0},{"i":"orehovy-miks-1.2kg","c":"","n":"«Ореховый микс»","t":"den","s":"Мистер Торт","m":"Мистер Торт","w":[1.2],"p":1270,"pt":"fix","d":"","num":0},{"i":"devochki-1kg","c":"","n":"«Девочки»","t":"den","s":"Мистер Торт","m":"Мистер Торт","w":[1.0],"p":1150,"pt":"fix","d":"","num":0},{"i":"den-i-noch","c":"","n":"«День и ночь»","t":"den","s":"Мистер Торт","m":"Мистер Торт","w":[],"p":1150,"pt":"fix","d":"","num":0},{"i":"temnyy-graf","c":"","n":"«Темный граф»","t":"den","s":"Хэлла","m":"Хэлла","w":[],"p":990,"pt":"fix","d":"","num":0},{"i":"promenad","c":"","n":"«Променад»","t":"den","s":"Хэлла","m":"Хэлла","w":[],"p":990,"pt":"fix","d":"","num":0},{"i":"krem-bryule-1-8","c":"","n":"«Крем-брюле»","t":"den","s":"Хэлла","m":"Хэлла","w":[1.8],"p":1500,"pt":"fix","d":"","num":0},{"i":"molochnaya-devochka","c":"","n":"«Молочная девочка»","t":"den","s":"Хэлла","m":"Хэлла","w":[],"p":1190,"pt":"fix","d":"","num":0},{"i":"kniga","c":"","n":"«Книга»","t":"den","s":"Хэлла","m":"Хэлла","w":[],"p":950,"pt":"fix","d":"","num":0},{"i":"kardinal","c":"","n":"«Кардинал»","t":"den","s":"Хэлла","m":"Хэлла","w":[1.2],"p":1270,"pt":"fix","d":"","num":0},{"i":"kazanova","c":"","n":"«Казанова»","t":"den","s":"Хэлла","m":"Хэлла","w":[],"p":1050,"pt":"fix","d":"","num":0},{"i":"aida-1-8","c":"","n":"«Аида»","t":"den","s":"Хэлла","m":"Хэлла","w":[1.8],"p":1500,"pt":"fix","d":"","num":0},{"i":"vishnevyy-sad-0-5","c":"","n":"«Вишневый сад»","t":"den","s":"Хэлла","m":"Хэлла","w":[0.5],"p":850,"pt":"fix","d":"","num":0},{"i":"aida-0-9","c":"","n":"«Аида»","t":"den","s":"Хэлла","m":"Хэлла","w":[0.9],"p":1090,"pt":"fix","d":"","num":0},{"i":"yogurtovyy-abrikotin","c":"","n":"«Йогуртовый абрикотин»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":950,"pt":"fix","d":"Ванильный бисквит, ванильный сироп, прослойка персиковой начинки, крем йогуртовый, шоколад, физалис.","num":0},{"i":"chernichno-karamelnyy","c":"","n":"«Чернично-карамельный»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":990,"pt":"fix","d":"Ванильный бисквит пропитан ванильным сиропом, прослоен черничным и карамельным кремами. Торт украшен шоколадным декором.","num":0},{"i":"vanilnyy-son","c":"","n":"«Ванильный сон»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":1050,"pt":"fix","d":"Ванильный и шоколадный бисквит пропитан ванильным сиропом, прослоен кремом на основе йогурта со злаками. Торт украшен шоколадным декором.","num":0},{"i":"mokachino","c":"","n":"«Мокачино»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":890,"pt":"fix","d":"Ванильный бисквит пропитан ванильным сиропом, прослоен кофейным кремом. Торт украшен шоколадным декором.","num":0},{"i":"charli","c":"","n":"«Чарли»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":1250,"pt":"fix","d":"Ванильный и шоколадный бисквит пропитан ванильным сиропом, прослоен кремом на основе йогурта со злаками. Торт украшен шоколадным декором.","num":0},{"i":"lyubovnik","c":"","n":"«Любовник»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":1090,"pt":"fix","d":"Ванильный и шоколадный бисквиты прослоены сиропом, прослойка карамельная с грецкими орехами, сметанный крем. Торт украшен шоколадной глазурью и шоколадом.","num":0},{"i":"shokoladnyy-zayac","c":"","n":"«Шоколадный заяц»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":950,"pt":"fix","d":"Шоколадный бисквит пропитан ванильным сиропом, шоколадно-сливочный крем. Торт украшен шоколадом и шоколадным декором.","num":0},{"i":"tvorozhno-vishnevyy","c":"","n":"«Творожно-вишневый»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":890,"pt":"fix","d":"Ванильный бисквит пропитан ванильным сиропом, творожный крем, прослойка – начинка из свежей вишни. Торт украшен шоколадными хлопьями и шоколадным декором.","num":0},{"i":"bozhya-korovka","c":"","n":"«Божья коровка»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":1150,"pt":"fix","d":"Нежный сметанный бисквит со смородиной, сметанный крем, прослойка из свежей вишни. Торт украшен мягким цветным гелем и шоколадом.","num":0},{"i":"kelshskiy","c":"","n":"«Кельшский»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":890,"pt":"fix","d":"Слоеные коржи прослоены малиновым наполнителем и заварным кремом. Торт украшен малиновым кремом и арахисовыми пластинами.","num":0},{"i":"pasechnik","c":"","n":"«Пасечник»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":890,"pt":"fix","d":"Медовые коржи прослоены нежным сливочным кремом с ванилью. Торт украшен карамелью, шоколадным декором, черносливом и курагой.","num":0},{"i":"shokoladnoe-bezumie","c":"","n":"«Шоколадное безумие»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":1150,"pt":"fix","d":"Шоколадный бисквит пропитан ванильным сиропом, прослоен темным, молочным и белым муссом. Торт украшен шоколадной глазурью и шоколадным декором.","num":0},{"i":"belgiyskiy-shokolad","c":"","n":"«Бельгийский шоколад»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":1190,"pt":"fix","d":"Шоколадный бисквит пропитан ванильным сиропом, прослоен шоколадным кремом в сочетании из трех видов шоколада: темного, белого и молочного. Торт украшен шоколадом и шоколадным декором.","num":0},{"i":"dolche-vita","c":"","n":"«Дольче вита»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":990,"pt":"fix","d":"Ванильный и шоколадный бисквит пропитан ванильным сиропом, нежный сливочный крем «Французский», прослойка – начинка из свежей вишни. Торт украшен воздушно-шоколадным безе и свежей вишней.","num":0},{"i":"klubnika-v-zakone","c":"","n":"«Клубника в законе»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":950,"pt":"fix","d":"Нежный ванильный бисквит пропитан ванильным сиропом. Два вида крема: сметанный и воздушный йогуртовый. Прослойка – начинка клубника свежая и кусочки персика. Торт украшен шоколадной глазурью, буше и шоколадным декором.","num":0},{"i":"tort-praga-tortyana","c":"","n":"«Прага»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":1190,"pt":"fix","d":"Шоколадный бисквит, фруктовый джем, шоколадный крем.","num":0},{"i":"tvorozhnyy","c":"","n":"«Творожный»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":1250,"pt":"fix","d":"Ванильный бисквит, ванильный сироп, творожный крем, прослойка из персика и ананаса, шоколадные хлопья, шоколад.","num":0},{"i":"tort-esterhazi","c":"","n":"«Эстерхази»","t":"den","s":"Тортьяна","m":"Тортьяна","w":[],"p":1150,"pt":"fix","d":"Ореховый бисквит, нежный сливочный крем «Французский». Торт украшен шоколадной глазурью, шоколадными хлопьями и лепестками из шоколада.","num":0},{"i":"pirozhnoe-pesochnaya-poloska","c":"","n":"Песочная полоска","t":"svoe","s":"Пирожные","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"pirozhnoe-penek","c":"","n":"Пирожное «Пенек»","t":"svoe","s":"Пирожные","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"zavarnoe-so-sgushchenkoy-v-obsypke","c":"","n":"Заварное со сгущенкой в обсыпке","t":"svoe","s":"Пирожные","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"karamiel-no-slivochnyi","c":"","n":"«Карамельно-сливочный»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-krasnyi-mak","c":"","n":"«Красный мак»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"Маковый бисквит, сырный крем, прослойка лимонного курда, покрытие карамельный гель.","num":0},{"i":"tort-toffi-1100","c":"","n":"«Тоффи»","t":"svoe","s":"Торты","m":"","w":[1.1],"p":null,"pt":null,"d":"","num":0},{"i":"tort-zimnyaya-vishnya","c":"","n":"«Зимняя вишня»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"fistashka-malina","c":"","n":"«Фисташка Малина»","t":"svoe","s":"Торты","m":"","w":[0.9],"p":null,"pt":null,"d":"Бисквит масляный белый Крем сырно-фисташковый Прослойка малиновый конфитюр Покрытие фисташковый кавер","num":0},{"i":"tort-kivi-limon","c":"","n":"«Киви лимон»","t":"svoe","s":"Торты","m":"","w":[1.2],"p":null,"pt":null,"d":"","num":0},{"i":"tort-koktieil-vkusov","c":"","n":"«Коктейль вкусов»","t":"svoe","s":"Торты","m":"","w":[1.2],"p":null,"pt":null,"d":"","num":0},{"i":"tort-malina-fistashka","c":"","n":"«Малина-фисташка»","t":"svoe","s":"Торты","m":"","w":[1.2],"p":null,"pt":null,"d":"","num":0},{"i":"tort-vishnya-maskarpone","c":"","n":"«Вишня-маскарпоне»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-snikers","c":"","n":"«Сникерс»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-smorodinovyy-fresh","c":"","n":"«Смородиновый фреш»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-shokoladno-apelsinovyy","c":"","n":"«Шоколадно-апельсиновый»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-shokoladnyy-barhat","c":"","n":"«Шоколадный бархат»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-smetannik","c":"","n":"«Сметанник»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-persikovyy-blyuz","c":"","n":"«Персиковый блюз»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-napoleon","c":"","n":"«Наполеон»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-briednyi-ievriei","c":"","n":"«Бедный еврей»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-mangovyy-son","c":"","n":"«Манговый сон»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-grafskie-razvaliny","c":"","n":"«Графские развалины»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"krasnyy-barhat","c":"","n":"«Красный бархат»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-krasnyy-barhat-s-vishney","c":"","n":"«Красный бархат с вишней»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-macho","c":"","n":"«Мачо»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-malinovyy-rassvet","c":"","n":"«Малиновый рассвет»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-mango-marakuyya","c":"","n":"«Манго-Маракуйя»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-aysberg","c":"","n":"«Айсберг»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-apiel-sinovoie-chudo","c":"","n":"«Апельсиновое чудо»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"charodeyka","c":"","n":"«Чародейка»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-korolevskiy-orehovyy","c":"","n":"«Королевский ореховый»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-ptiche-moloko","c":"","n":"«Мулен Руж»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"Торт «Мулен Руж» — это изысканное сочетание насыщенных шоколадных бисквитов, хрустящего орехового пралине в молочном шоколаде, малинового кули и ароматных вишен и малины с кремом из натуральных сливок и белого шоколада. Декорирован зеркальной глазурью, грецкими орехами и шоколадом, что делает его не только вкусным, но и визуально привлекательным.","num":0},{"i":"tort-mulen-ruzh","c":"","n":"«Птичье молоко»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-k-23-fevralya-krugly","c":"","n":"«С Днем Защитника Отечества», круглый","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"Кремовый торт к 23 февраля – это вкусное угощение, которое идеально подойдет для праздничного стола. Основа торта выполнена из нежного бисквита, пропитанного ароматным сиропом, что придает ему дополнительную влажность и мягкость. Крем, покрывающий торт, приготовлен из свежих сливок с добавлением ванильного экстракта, что создает нежную и воздушную текстуру. Поверхность торта украшена изящными узорами из крема, в виде гвоздик. Для декора используются также шоколадные элементы в виде звезды с датой. Дополнительно торт можно украсить посыпками из мелко натертого темного или молочного шоколада, создавая эффект камуфляжа. Этот торт невероятно вкусен, что делает его отличным подарком для любого мужчины в этот особенный день.","num":0},{"i":"tort-k-23-fevralya-pryamougolny","c":"","n":"«С Днем Защитника Отечества»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"Кремовый торт к 23 февраля – это вкусное угощение, которое идеально подойдет для праздничного стола. Основа торта выполнена из нежного бисквита, пропитанного ароматным сиропом. Крем, покрывающий торт, приготовлен из свежих сливок с добавлением ванильного экстракта, что создает нежную и воздушную текстуру. Дополнительно торт можно украсить посыпками из мелко натертого темного или молочного шоколада, создавая эффект камуфляжа. Этот торт невероятно вкусен, что делает его отличным подарком для любого мужчины в этот особенный день.","num":0},{"i":"tort-vdohnovenie","c":"","n":"«Вдохновение»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0},{"i":"tort-skazka","c":"","n":"«Сказка»","t":"svoe","s":"Торты","m":"","w":[],"p":null,"pt":null,"d":"","num":0}]</script>
+<script>
+(() => {
+'use strict';
+
+/* ---------- данные из products.json (brand / meta) ---------- */
+const PHONE = '+7 915 501-36-37', TEL = 'tel:+79155013637', WA = 'https://wa.me/79102609496';
+const PRICE_KG = 1450, MIN_KG = 2, LEAD_DAYS = 3, OPEN_H = 9, CLOSE_H = 20;
+const WEIGHTS = [{kg:1,g:'6–9'},{kg:2,g:'10–12'},{kg:3,g:'16–18'},{kg:4,g:'20–24'},{kg:5,g:'26–30'},{kg:6,g:'30–36'},{kg:7,g:'36–42'}];
+const FILLINGS = [
+  {name:'Вишнёвый сад', id:'nachinka-vishnevyy-sad'},
+  {name:'Клубничка', id:'nachinka-klubnichka'},
+  {name:'Сметанник', id:'nachinka-smetannik'},
+  {name:'Творожный', id:'nachinka-tvorozhnyy'},
+  {name:'Трюфель', id:'nachinka-tryufel'},
+  {name:'Шахеризада', id:null}
+];
+const PACKS = [
+  {key:'plastic', name:'Пластиковая упаковка', price:80, note:'80 ₽'},
+  {key:'tray', name:'Поднос', deposit:350, note:'залог 350 ₽'},
+  {key:'stand', name:'Подставка', deposit:1000, note:'залог 1 000 ₽, вернём, когда вернёте подставку'}
+];
+const PICKUP = ['ул. Фомина, дом 2','ул. Горького, дом 50','ул. Октябрьская, дом 40','ул. Пушкина, дом 29','ул. Машкарина, дом 12','ул. Комсомольская, дом 53','ул. Комсомольская, дом 384','ул. Бульвар Победы, дом 3','ул. Горького, дом 22','ул. Черкасская, дом 39','ул. Металлургов, дом 24','ул. Приборостроительная, дом 21','ул. Гагарина, дом 51','ул. Мопра, дом 20','ул. Революции, дом 2'];
+const ADDRESSES = ['ул. Горького, 22','ул. Фомина, 2','ул. Горького, 50','ул. Октябрьская, 40','ул. Пушкина, 29','ул. Машкарина, 12','ул. Комсомольская, 53','ул. Комсомольская, 384','Бульвар Победы, 3','ул. Комсомольская, 238 («Современник»)','Московское шоссе, 111','ул. Металлургов, 16','ул. Приборостроительная, 21','ул. Мопра, 20','Наугорское шоссе, 88а','ул. Революции, 2','ул. Металлургов, 34','Бульвар Молодёжи, 11','ул. Раздольная, 86'];
+const CATS = [
+  {key:'zakaz', label:'На заказ', subs:['Праздничные','Детские','Свадебные','Юбилейные','Торты-приколы'],
+   note:'Назовите номер — повторим этот торт. От 1 450 ₽ за кг, минимум 2 кг, заказ за 3 суток.'},
+  {key:'den', label:'На каждый день', subs:['Тортьяна','Хэлла','Мистер Торт'],
+   note:'Готовые торты от «Тортьяны», «Хэллы» и «Мистера Торта». Наличие в конкретном магазине лучше уточнить по телефону.'},
+  {key:'svoe', label:'Своё производство', subs:['Торты','Пирожные'],
+   note:'Торты и пирожные, которые печём сами. Цену и наличие подскажем по телефону.'},
+  {key:'nach', label:'Начинки', subs:[],
+   note:'Из чего будет ваш торт внутри. Выберите начинку — она сразу попадёт в заявку.'}
+];
+const GALLERY = ['s9','p27','detskiy-tort-d55','yubileynyy-tort-yu11','p18','s10','detskiy-tort-d48','yubileynyy-tort-yu17','p6','s3','detskiy-tort-d25','25-let'];
+const BIG = new Set(['s9','detskiy-tort-d55']);
+const FEATURED = ['p26','detskiy-tort-d32','s20','yubileynyy-tort-yu21','p19','detskiy-tort-d29','s13','yubileynyy-tort-yu13'];
+const STEP = 8;
+
+const DATA = JSON.parse(document.getElementById('data').textContent);
+const byId = Object.fromEntries(DATA.map(p => [p.i, p]));
+FILLINGS.forEach(f => { if (f.id && byId[f.id]) byId[f.id].n = '«' + f.name + '»'; });
+
+/* ---------- утилиты ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const rub = n => n.toLocaleString('ru-RU').replace(/\s/g, ' ') + ' ₽';
+const img = id => 'images/' + id + '.jpg';
+const kg = n => String(n).replace('.', ',');
+const plural = (n, a, b, c) => { const m = n % 10, h = n % 100; return m === 1 && h !== 11 ? a : m >= 2 && m <= 4 && (h < 12 || h > 14) ? b : c; };
+const norm = s => String(s).toLowerCase().replace(/ё/g, 'е').replace(/c/g, 'с').replace(/p/g, 'п').replace(/[«»"\s№#.,-]/g, '');
+const title = p => p.t === 'zakaz' && p.c ? p.n + ' № ' + p.c : p.n;
+const isCover = p => p.t === 'svoe';
+
+/* ---------- каталог ---------- */
+const st = {cat:'zakaz', sub:'all', q:'', shown:STEP};
+const tabsEl = $('#tabs'), chipsEl = $('#chips'), gridEl = $('#grid'), moreEl = $('#more');
+
+const goods = DATA.filter(p => p.t !== 'nach').length;
+$('#catCount').textContent = goods + ' ' + plural(goods, 'торт и пирожное', 'торта и пирожных', 'тортов и пирожных') + ': на заказ, готовые и нашего производства.';
+
+tabsEl.innerHTML = CATS.map(c => {
+  const n = DATA.filter(p => p.t === c.key).length;
+  return `<button class="tab" role="tab" data-cat="${c.key}" aria-selected="${c.key === st.cat}">${c.label} <small>${n}</small></button>`;
+}).join('');
+
+function items() {
+  if (st.q) {
+    const q = norm(st.q);
+    return DATA.filter(p => norm(p.c) === q).concat(DATA.filter(p => norm(p.c) !== q && (norm(p.c).startsWith(q) || norm(p.n + p.s + p.m).includes(q))));
+  }
+  const c = CATS.find(c => c.key === st.cat);
+  const list = DATA.filter(p => p.t === st.cat && (st.sub === 'all' || p.s === st.sub));
+  if (st.sub !== 'all') return list;
+  if (st.cat !== 'zakaz') return c.subs.length ? c.subs.flatMap(s => list.filter(p => p.s === s)) : list;
+  // «Все» на заказ: сначала самые фотогеничные, дальше чередуем подразделы
+  const first = FEATURED.map(id => byId[id]).filter(Boolean), out = [...first];
+  const rest = list.filter(p => !first.includes(p));
+  const buckets = c.subs.map(s => rest.filter(p => p.s === s));
+  for (let i = 0; out.length < list.length; i++) buckets.forEach(b => b[i] && out.push(b[i]));
+  return out;
+}
+
+function priceHtml(p) {
+  if (p.pt === 'kg') return `<p class="card__price">от ${rub(p.p)}<span>/кг</span></p>`;
+  if (p.pt === 'fix') return `<p class="card__price">${rub(p.p)}</p>`;
+  if (p.t === 'nach') return '';
+  return `<p class="card__price"><a href="${TEL}">Цену уточните по телефону</a></p>`;
+}
+
+function card(p) {
+  const w = p.w && p.w.length ? p.w.map(kg).join(' / ') + ' кг' : '';
+  let head, meta = '', extra = '', btn = '';
+  if (p.t === 'zakaz') {
+    head = p.n;
+    meta = p.c ? '' : p.s;
+    btn = `<button class="btn btn--main btn--block" data-act="order" data-id="${p.i}">Заказать</button>`;
+  } else if (p.t === 'nach') {
+    head = 'Начинка ' + p.n;
+    extra = `<p class="card__desc">${esc(p.d)}</p>`;
+    btn = `<button class="btn btn--soft btn--block" data-act="fill" data-id="${p.i}">Выбрать начинку</button>`;
+  } else {
+    head = p.n;
+    meta = [p.m, w].filter(Boolean).join(' · ');
+  }
+  return `<article class="card${isCover(p) ? ' card--cover' : ''}">
+    <button class="card__ph" data-act="view" data-id="${p.i}" aria-label="Подробнее: ${esc(title(p))}">
+      <img src="${img(p.i)}" width="600" height="600" loading="lazy" decoding="async" alt="${esc(title(p))}">
+      ${p.c ? `<span class="stamp">№ ${esc(p.c)}</span>` : ''}
+    </button>
+    <div class="card__body">
+      <h3 class="card__title">${esc(head)}</h3>
+      ${meta ? `<p class="card__meta">${esc(meta)}</p>` : ''}
+      ${extra}${priceHtml(p)}${btn}
+    </div>
+  </article>`;
+}
+
+function render(keepScroll) {
+  const c = CATS.find(c => c.key === st.cat);
+  [...tabsEl.children].forEach(b => b.setAttribute('aria-selected', !st.q && b.dataset.cat === st.cat));
+  chipsEl.hidden = !!st.q || !c.subs.length;
+  chipsEl.innerHTML = ['all', ...c.subs].map(s => {
+    const n = DATA.filter(p => p.t === st.cat && (s === 'all' || p.s === s)).length;
+    return `<button class="chip" data-sub="${s}" aria-pressed="${s === st.sub}">${s === 'all' ? 'Все' : s} · ${n}</button>`;
+  }).join('');
+  $('#catNote').textContent = st.q ? 'Ищем по всем разделам.' : c.note;
+  const list = items(), part = list.slice(0, st.shown);
+  gridEl.innerHTML = part.length ? part.map(card).join('')
+    : `<div class="empty">Ничего не нашли. Попробуйте номер целиком, например Д24, — или <a href="${TEL}">позвоните</a>, подскажем.</div>`;
+  const left = list.length - part.length;
+  moreEl.innerHTML = left > 0
+    ? `<button class="btn btn--line" id="moreBtn">Показать ещё ${Math.min(STEP, left)}</button><small>Показано ${part.length} из ${list.length}</small>` : '';
+}
+
+tabsEl.addEventListener('click', e => {
+  const b = e.target.closest('.tab'); if (!b) return;
+  openTab(b.dataset.cat);
+});
+function openTab(cat, sub = 'all') {
+  Object.assign(st, {cat, sub, q:'', shown:STEP}); $('#q').value = ''; render();
+}
+chipsEl.addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  Object.assign(st, {sub:b.dataset.sub, shown:STEP}); render();
+});
+moreEl.addEventListener('click', e => { if (e.target.id === 'moreBtn') { st.shown += STEP; render(); } });
+let qt; $('#q').addEventListener('input', e => { clearTimeout(qt); qt = setTimeout(() => { st.q = e.target.value.trim(); st.shown = STEP; render(); }, 150); });
+
+/* ---------- галерея ---------- */
+$('#gal').innerHTML = GALLERY.filter(id => byId[id]).map(id => {
+  const p = byId[id];
+  return `<figure class="gtile${BIG.has(id) ? ' big' : ''}" style="margin:0">
+    <button class="ph" data-act="view" data-id="${id}" aria-label="Увеличить: ${esc(title(p))}"><img src="${img(id)}" width="600" height="600" loading="lazy" decoding="async" alt="${esc(title(p))}"></button>
+    <figcaption class="gtile__bar"><div><b>${p.c ? '№ ' + esc(p.c) : esc(p.n)}</b><small>${esc(p.s)}</small></div>
+    <button class="btn btn--main" data-act="order" data-id="${id}">Хочу такой</button></figcaption>
+  </figure>`;
+}).join('');
+
+/* ---------- адреса ---------- */
+$('#alist').innerHTML = ADDRESSES.map(a =>
+  `<li><a href="https://yandex.ru/maps/?text=${encodeURIComponent('Орёл, ' + a.replace(/\s*\(.*\)/, ''))}" target="_blank" rel="noopener"><svg class="ic"><use href="#i-pin"/></svg>${esc(a)}</a></li>`).join('');
+
+/* ---------- карточка товара ---------- */
+const sheet = $('#sheet');
+function view(id) {
+  const p = byId[id]; if (!p) return;
+  const w = p.w && p.w.length ? p.w.map(kg).join(' / ') + ' кг' : '';
+  const meta = p.t === 'zakaz' ? p.s + ' · минимум 2 кг' : p.t === 'nach' ? 'Начинка для торта на заказ' : [p.m || 'Собственное производство', w].filter(Boolean).join(' · ');
+  let price = '', btns = '';
+  if (p.pt === 'kg') price = `от ${rub(p.p)} <span>за кг</span>`;
+  else if (p.pt === 'fix') price = rub(p.p);
+  if (p.t === 'zakaz') btns = `<button class="btn btn--main" data-act="order" data-id="${p.i}">Заказать этот торт</button>`;
+  else if (p.t === 'nach') btns = `<button class="btn btn--main" data-act="fill" data-id="${p.i}">Выбрать эту начинку</button>`;
+  else btns = `<a class="btn btn--main" href="${TEL}"><svg class="ic"><use href="#i-phone"/></svg>${p.pt ? 'Уточнить наличие' : 'Узнать цену и наличие'}</a>
+    <a class="btn btn--soft" href="${WA}" target="_blank" rel="noopener"><svg class="ic"><use href="#i-chat"/></svg>Спросить в WhatsApp</a>`;
+  sheet.innerHTML = `<div class="sheet__ph${isCover(p) ? ' cover' : ''}"><img src="${img(p.i)}" width="600" height="600" alt="${esc(title(p))}">
+      <button class="sheet__x" data-close aria-label="Закрыть"><svg class="ic"><use href="#i-x"/></svg></button></div>
+    <div class="sheet__body"><h3 id="sheetTitle">${esc(p.t === 'nach' ? 'Начинка ' + p.n : title(p))}</h3>
+      <p class="sheet__meta">${esc(meta)}</p>
+      ${p.d ? `<p class="sheet__desc">${esc(p.d)}</p>` : ''}
+      ${price ? `<p class="sheet__price">${price}</p>` : (p.t === 'svoe' ? `<p class="sheet__meta" style="margin-top:14px">Цену уточните по телефону ${PHONE}.</p>` : '')}
+      <div class="sheet__btns">${btns}</div></div>`;
+  sheet.showModal();
+}
+sheet.addEventListener('click', e => { if (e.target === sheet || e.target.closest('[data-close]')) sheet.close(); });
+
+/* ---------- общий обработчик кнопок ---------- */
+document.addEventListener('click', e => {
+  const a = e.target.closest('[data-act]');
+  if (a) {
+    e.preventDefault();
+    const id = a.dataset.id;
+    if (sheet.open && a.dataset.act !== 'view') sheet.close();
+    if (a.dataset.act === 'view') view(id);
+    if (a.dataset.act === 'order') pickCake(id, true);
+    if (a.dataset.act === 'fill') pickFill(id);
+    return;
+  }
+  const t = e.target.closest('[data-tab]');
+  if (t) { e.preventDefault(); openTab(t.dataset.tab); scrollToEl($('#catalog')); return; }
+  const g = e.target.closest('[data-go]');
+  if (g) { scrollToEl($('#' + g.dataset.go)); }
+});
+function scrollToEl(el) {
+  const y = el.getBoundingClientRect().top + scrollY - ($('#top').offsetHeight + 8);
+  scrollTo({top:y, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+}
+
+/* ---------- форма заказа ---------- */
+const form = $('#form');
+const o = {cake:null, photo:null, photoUrl:null, weight:MIN_KG, fill:null, pack:'plastic'};
+
+// вес
+$('#weights').innerHTML = WEIGHTS.filter(w => w.kg >= MIN_KG).map(w =>
+  `<label class="opt"><input type="radio" name="weight" value="${w.kg}"${w.kg === o.weight ? ' checked' : ''}><span class="opt__box"><b>${w.kg} кг</b><span>${w.g} гостей</span></span></label>`).join('');
+// начинки
+$('#fills').innerHTML = FILLINGS.map((f, i) =>
+  `<label class="opt fill"><input type="radio" name="fill" value="${i}"><span class="opt__box">${f.id ? `<img src="${img(f.id)}" width="50" height="50" loading="lazy" alt="">` : `<span class="mono">Ш</span>`}<b>${f.name}</b></span></label>`).join('');
+// упаковка
+$('#packs').innerHTML = PACKS.map(p =>
+  `<label class="opt pack"><input type="radio" name="pack" value="${p.key}"${p.key === o.pack ? ' checked' : ''}><span class="opt__box"><b>${p.name}</b><span>${p.note}</span></span></label>`).join('');
+// самовывоз
+$('#point').innerHTML = '<option value="">Выберите магазин</option>' + PICKUP.map(a => `<option>${esc(a)}</option>`).join('');
+
+// дата и время: не раньше чем через 3 суток
+const pad = n => String(n).padStart(2, '0');
+const ymd = d => d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+const SLOTS = []; for (let h = OPEN_H; h < CLOSE_H; h++) SLOTS.push(pad(h) + ':00', pad(h) + ':30');
+const earliest = new Date(Date.now() + LEAD_DAYS * 864e5);
+let minDate = ymd(earliest), minTime = pad(earliest.getHours()) + ':' + pad(earliest.getMinutes());
+if (minTime > SLOTS[SLOTS.length - 1]) { const d = new Date(earliest); d.setDate(d.getDate() + 1); minDate = ymd(d); minTime = '00:00'; }
+const dateEl = $('#date'), timeEl = $('#time');
+dateEl.min = minDate;
+const fmtDate = v => { if (!v) return ''; const [y, m, d] = v.split('-').map(Number); return new Date(y, m - 1, d).toLocaleDateString('ru-RU', {day:'numeric', month:'long', weekday:'short'}); };
+$('#dateHint').textContent = 'Заказы принимаем минимум за 3 суток. Ближайшая дата — ' + fmtDate(minDate).replace(/^(\S+),\s*(.*)$/, '$2, $1') + '.';
+function fillTimes() {
+  const cur = timeEl.value, limit = dateEl.value === minDate ? minTime : '00:00';
+  timeEl.innerHTML = '<option value="">Выберите время</option>' + SLOTS.map(s => `<option${s < limit ? ' disabled' : ''}${s === cur && s >= limit ? ' selected' : ''}>${s}</option>`).join('');
+}
+fillTimes();
+dateEl.addEventListener('change', fillTimes);
+
+// торт: номер, выбор из каталога, своё фото
+const numEl = $('#cakeNum'), pickedEl = $('#cakePicked');
+function findCake(v) {
+  const q = norm(v); if (!q) return null;
+  return DATA.find(p => p.t === 'zakaz' && p.c && norm(p.c) === q) || DATA.find(p => p.t === 'zakaz' && norm(p.n) === q) || null;
+}
+function showPicked() {
+  const v = numEl.value.trim(), p = o.cake && byId[o.cake];
+  if (p) {
+    pickedEl.innerHTML = `<div class="picked"><img src="${img(p.i)}" width="72" height="72" alt=""><div><b>${esc(title(p))}</b><span>${esc(p.s)} · от ${rub(PRICE_KG)} за кг</span></div>
+      <button type="button" data-clear aria-label="Убрать торт"><svg class="ic"><use href="#i-x"/></svg></button></div>`;
+  } else if (v) {
+    pickedEl.innerHTML = `<div class="picked warn"><div><b>«${esc(v)}» — в каталоге такого номера нет</b><span>Ничего страшного: уточним, когда свяжемся с вами. Можно приложить фото.</span></div></div>`;
+  } else pickedEl.innerHTML = '';
+}
+pickedEl.addEventListener('click', e => { if (e.target.closest('[data-clear]')) { o.cake = null; numEl.value = ''; showPicked(); update(); numEl.focus(); } });
+numEl.addEventListener('input', () => { const p = findCake(numEl.value); o.cake = p ? p.i : null; showPicked(); update(); });
+
+function pickCake(id, scroll) {
+  const p = byId[id]; if (!p) return;
+  o.cake = id; numEl.value = p.c || p.n.replace(/[«»]/g, '');
+  showPicked(); update();
+  if (!$('#done').classList.contains('on')) {
+    if (scroll) scrollToEl($('#stCake'));
+  } else { resetForm(); o.cake = id; numEl.value = p.c || p.n.replace(/[«»]/g, ''); showPicked(); update(); scrollToEl($('#stCake')); }
+  $('#stCake').animate?.([{boxShadow:'0 0 0 3px #8E2F44'}, {boxShadow:'0 0 0 1px rgba(70,63,58,.14)'}], {duration:1400, easing:'ease-out'});
+}
+function pickFill(id) {
+  const i = FILLINGS.findIndex(f => f.id === id); if (i < 0) return;
+  form.fill[i].checked = true; onFill(); scrollToEl($('#stFill'));
+}
+
+const photoEl = $('#cakePhoto');
+photoEl.addEventListener('change', () => {
+  const f = photoEl.files[0];
+  if (o.photoUrl) URL.revokeObjectURL(o.photoUrl);
+  o.photo = f || null; o.photoUrl = f ? URL.createObjectURL(f) : null;
+  $('#photoPrev').innerHTML = f ? `<div class="picked"><img class="cover" src="${o.photoUrl}" width="72" height="72" alt="Ваше фото"><div><b>Ваше фото</b><span>${esc(f.name)}</span></div>
+    <button type="button" data-unphoto aria-label="Убрать фото"><svg class="ic"><use href="#i-x"/></svg></button></div>` : '';
+  $('#upText').textContent = f ? 'Другое фото' : 'Своё фото';
+  update();
+});
+$('#photoPrev').addEventListener('click', e => { if (e.target.closest('[data-unphoto]')) { photoEl.value = ''; photoEl.dispatchEvent(new Event('change')); } });
+
+function onFill() {
+  const i = form.fill.value; o.fill = i === '' ? null : FILLINGS[+i];
+  const p = o.fill && o.fill.id && byId[o.fill.id];
+  $('#fillDesc').textContent = o.fill ? (p ? p.d : 'Состав «Шахеризады» подскажем по телефону или когда свяжемся с вами.') : '';
+  update();
+}
+$('#fills').addEventListener('change', onFill);
+
+// телефон: +7 (XXX) XXX-XX-XX
+const phoneEl = $('#phone');
+const digits = v => { let d = v.replace(/\D/g, ''); if (d[0] === '8' || d[0] === '7') d = d.slice(1); return d.slice(0, 10); };
+phoneEl.addEventListener('input', () => {
+  const d = digits(phoneEl.value);
+  let s = '+7';
+  if (d.length) s += ' (' + d.slice(0, 3);
+  if (d.length >= 3) s += ')';
+  if (d.length > 3) s += ' ' + d.slice(3, 6);
+  if (d.length > 6) s += '-' + d.slice(6, 8);
+  if (d.length > 8) s += '-' + d.slice(8, 10);
+  phoneEl.value = d.length ? s : '';
+});
+phoneEl.addEventListener('focus', () => { if (!phoneEl.value) phoneEl.value = '+7 '; });
+phoneEl.addEventListener('blur', () => { if (!digits(phoneEl.value).length) phoneEl.value = ''; });
+
+// расчёт и чек
+function calc() {
+  const pack = PACKS.find(p => p.key === o.pack);
+  const cake = o.weight * PRICE_KG, extra = pack.price || 0;
+  return {cake, extra, total:cake + extra, deposit:pack.deposit || 0, pack};
+}
+function summary() {
+  const p = o.cake && byId[o.cake], v = numEl.value.trim();
+  const cake = p ? title(p) : v ? v : o.photo ? 'по вашему фото' : '';
+  const w = WEIGHTS.find(x => x.kg === o.weight);
+  return [
+    ['Торт', cake + (cake && o.photo && cake !== 'по вашему фото' ? ' + фото' : '')],
+    ['Вес', o.weight + ' кг · ' + w.g + ' гостей'],
+    ['Начинка', o.fill ? o.fill.name : ''],
+    ['Когда', dateEl.value ? fmtDate(dateEl.value) + (timeEl.value ? ', ' + timeEl.value : '') : ''],
+    ['Надпись', $('#text').value.trim()],
+    ['Забрать', $('#point').value],
+    ['Упаковка', calc().pack.name]
+  ];
+}
+const listHtml = rows => rows.map(([k, v]) => `<li class="${v ? '' : 'empty-v'}"><span>${k}</span><span>${v ? esc(v) : '—'}</span></li>`).join('');
+function update() {
+  o.weight = +form.weight.value;
+  o.pack = form.pack.value;
+  const c = calc();
+  $('#rlist').innerHTML = listHtml(summary().filter(([k, v]) => v || k !== 'Надпись'));
+  $('#rsum').innerHTML = `<div><span>Торт, ${o.weight} кг × ${rub(PRICE_KG)}</span><span>${rub(c.cake)}</span></div>
+    ${c.extra ? `<div><span>${c.pack.name}</span><span>${rub(c.extra)}</span></div>` : ''}
+    <div class="total"><span>Итого</span><b>от ${rub(c.total)}</b></div>
+    ${c.deposit ? `<div class="dep"><span>+ залог за ${c.pack.key === 'stand' ? 'подставку' : 'поднос'}, вернём</span><span>${rub(c.deposit)}</span></div>` : ''}`;
+  $('#barKg').textContent = o.weight + ' кг · ' + (o.fill ? o.fill.name : 'итого');
+  $('#barSum').textContent = 'от ' + rub(c.total).replace(/ /g, ' ');
+}
+form.addEventListener('input', e => { if (e.target.name !== 'fill') update(); clearBad(e.target); });
+form.addEventListener('change', e => { update(); clearBad(e.target); });
+function clearBad(el) { const b = el.closest('.is-bad'); if (b) b.classList.remove('is-bad'); }
+
+// отправка (демо без бэкенда)
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const bad = [];
+  const mark = (el, cond) => { el.classList.toggle('is-bad', !cond); if (!cond) bad.push(el); };
+  mark($('#stCake'), o.cake || numEl.value.trim() || o.photo);
+  mark($('#stFill'), o.fill);
+  mark($('#fDate'), dateEl.value && dateEl.value >= minDate);
+  mark($('#fTime'), timeEl.value && !(dateEl.value === minDate && timeEl.value < minTime));
+  mark($('#stPoint'), $('#point').value);
+  mark($('#fName'), $('#name').value.trim().length > 1);
+  mark($('#fPhone'), digits(phoneEl.value).length === 10);
+  if (bad.length) { scrollToEl(bad[0]); const f = bad[0].querySelector('input:not([type=radio]):not([type=file]),select'); if (f) setTimeout(() => f.focus({preventScroll:true}), 400); return; }
+  const c = calc();
+  $('#doneList').innerHTML = listHtml(summary().filter(([, v]) => v).concat([['Итого', 'от ' + rub(c.total) + (c.deposit ? ' + залог ' + rub(c.deposit) : '')]]));
+  $('#doneText').textContent = $('#name').value.trim() + ', спасибо! Мы позвоним по номеру ' + phoneEl.value + ', чтобы подтвердить заказ и назвать точную сумму.';
+  $('#orderGrid').hidden = true;
+  $('#done').classList.add('on');
+  scrollToEl($('#order'));
+  setTimeout(() => $('#done').focus({preventScroll:true}), 400);
+  setBar();
+});
+function resetForm() {
+  form.reset(); o.cake = null; o.fill = null; o.photo = null;
+  if (o.photoUrl) URL.revokeObjectURL(o.photoUrl); o.photoUrl = null;
+  $('#photoPrev').innerHTML = ''; $('#upText').textContent = 'Своё фото'; $('#fillDesc').textContent = '';
+  form.querySelectorAll('.is-bad').forEach(el => el.classList.remove('is-bad'));
+  fillTimes(); showPicked();
+  $('#done').classList.remove('on'); $('#orderGrid').hidden = false; update(); setBar();
+}
+$('#again').addEventListener('click', () => { resetForm(); scrollToEl($('#order')); });
+
+/* ---------- шапка и нижняя панель ---------- */
+const bar = $('#bar'), top = $('#top');
+let inOrder = false, pastHero = false;
+function setBar() {
+  const order = inOrder && !$('#done').classList.contains('on');
+  bar.classList.toggle('is-order', order);
+  $('#barBtn').textContent = order ? 'Отправить' : 'Заказать торт';
+  const on = pastHero || order;
+  bar.classList.toggle('on', on);
+  document.body.style.setProperty('--bar-h', on && innerWidth < 1000 ? bar.offsetHeight + 'px' : '0px');
+}
+$('#barBtn').addEventListener('click', e => { if (bar.classList.contains('is-order')) { e.preventDefault(); form.requestSubmit(); } });
+const last = es => es[es.length - 1];
+new IntersectionObserver(es => { inOrder = last(es).isIntersecting; setBar(); }, {rootMargin:'-30% 0px -30% 0px'}).observe($('#order'));
+new IntersectionObserver(es => { pastHero = !last(es).isIntersecting; setBar(); }, {rootMargin:'-120px 0px 0px 0px'}).observe($('.hero__cta'));
+addEventListener('scroll', () => top.classList.toggle('is-stuck', scrollY > 8), {passive:true});
+addEventListener('resize', setBar);
+
+render(); showPicked(); update();
+})();
+</script>
+</body>
+</html>
